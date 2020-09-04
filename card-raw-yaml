@@ -1,0 +1,438 @@
+cards:
+  - entity: media_player.tv
+    type: media-control
+  - entities:
+      - entity: input_number.amp_volume
+        icon: 'mdi:volume-high'
+    type: entities
+  - cards:
+      - hold_action:
+          action: none
+        icon: 'mdi:numeric-1'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: 1
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:numeric-2'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: 2
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:numeric-3'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: 3
+            entity_id: media_player.tv
+        type: button
+    type: horizontal-stack
+  - cards:
+      - hold_action:
+          action: none
+        icon: 'mdi:numeric-4'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: 4
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:numeric-5'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: 5
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:numeric-6'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: 6
+            entity_id: media_player.tv
+        type: button
+    type: horizontal-stack
+  - cards:
+      - hold_action:
+          action: none
+        icon: 'mdi:numeric-7'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: 7
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:numeric-8'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: 8
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:numeric-9'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: 9
+            entity_id: media_player.tv
+        type: button
+    type: horizontal-stack
+  - cards:
+      - hold_action:
+          action: none
+        icon: 'mdi:minus'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: none
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:numeric-0'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: 0
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:minus'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: none
+        type: button
+    type: horizontal-stack
+  - entities:
+      - type: divider
+    show_header_toggle: false
+    type: entities
+  - cards:
+      - hold_action:
+          action: none
+        icon: 'mdi:volume-plus'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: VOLUMEUP
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:volume-off'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: MUTE
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:arrow-up-circle-outline'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: CHANNELUP
+            entity_id: media_player.tv
+        type: button
+    type: horizontal-stack
+  - cards:
+      - hold_action:
+          action: none
+        icon: 'mdi:volume-minus'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: VOLUMEDOWN
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:information-variant'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: INFO
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:arrow-down-circle-outline'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: CHANNELDOWN
+            entity_id: media_player.tv
+        type: button
+    type: horizontal-stack
+  - entities:
+      - type: divider
+    show_header_toggle: false
+    type: entities
+  - cards:
+      - hold_action:
+          action: none
+        icon: 'mdi:home'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: HOME
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:menu-up-outline'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: UP
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:undo-variant'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: BACK
+            entity_id: media_player.tv
+        type: button
+    type: horizontal-stack
+  - cards:
+      - hold_action:
+          action: none
+        icon: 'mdi:menu-left-outline'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: LEFT
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:circle-outline'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: ENTER
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:menu-right-outline'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: RIGHT
+            entity_id: media_player.tv
+        type: button
+    type: horizontal-stack
+  - cards:
+      - hold_action:
+          action: none
+        icon: 'mdi:video-3d'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: broadlink.send
+          service_data:
+            host: 192.168.0.20
+            packet: >-
+              JgBQAAABJ5YUEhQSFDYVERQSFBIUEhQSEzcVNhQSFDcUNRY2FTYUNxQRFREVNhQ3FDcUERU2FTYUNxQ2FREUEhURFDcTEhURFQAFJQABJ0wUAA0FAAAAAAAAAAA=
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:menu-down-outline'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.button
+          service_data:
+            button: DOWN
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:settings'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: broadlink.send
+          service_data:
+            host: 192.168.0.20
+            packet: >-
+              JgBQAAABJ5ITEhQSEzcVERMSExMTEhMTEzcUNxMSEzcUNhQ3EzcTNxU1FDcTEhUREhMVERM3FBIUERQSFDYUNhQ3EzcSFBM3EwAFFQABJkoTAA0FAAAAAAAAAAA=
+        type: button
+    type: horizontal-stack
+  - cards:
+      - hold_action:
+          action: none
+        icon: 'mdi:rewind'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.command
+          service_data:
+            command: media.controls/rewind
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:stop'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.command
+          service_data:
+            command: media.controls/stop
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:pause'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.command
+          service_data:
+            command: media.controls/pause
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:play'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.command
+          service_data:
+            command: media.controls/play
+            entity_id: media_player.tv
+        type: button
+      - hold_action:
+          action: none
+        icon: 'mdi:fast-forward'
+        show_icon: true
+        show_name: false
+        tap_action:
+          action: call-service
+          service: webostv.command
+          service_data:
+            command: media.controls/fastForward
+            entity_id: media_player.tv
+        type: button
+    type: horizontal-stack
+  - entities:
+      - type: divider
+    show_header_toggle: false
+    type: entities
+  - cards:
+      - entity: script.mce_state_on
+        hold_action:
+          action: none
+        icon: 'mdi:television
+        show_icon: true
+        show_name: true
+        tap_action:
+          action: toggle
+        type: button
+      - entity: script.mce_state_off
+        hold_action:
+          action: none
+        icon: 'mdi:television-off'
+        show_icon: true
+        show_name: true
+        tap_action:
+          action: toggle
+        type: button
+    type: horizontal-stack
+type: vertical-stack
